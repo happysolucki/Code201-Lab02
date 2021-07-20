@@ -22,10 +22,20 @@ const quiz = function aboutMeQuiz() {
     let guess = prompt(questions[i]).toLowerCase();
     // for questions 3 & 5, the correct answer is no. compare to user input. if correct, increment correctGuesses by 1.
     if (i === 2 || i === 4) {
-      if (guess === 'n' || guess === 'no') correctGuesses++;
+      if (guess === 'n' || guess === 'no') {
+        alert("Correct!");
+        correctGuesses++;
+      } else {
+        alert("Incorrect!");
+      }
     } else {
       // for all other questions, the proper response is yes. compare to user input. if correct, increment correctGuesses by 1.
-      if (guess === 'y' || guess === 'yes') correctGuesses++;
+      if (guess === 'y' || guess === 'yes') {
+        alert("Correct!");
+        correctGuesses++;
+      } else {
+        alert("Incorrect!");
+      }
     }
   }
 
