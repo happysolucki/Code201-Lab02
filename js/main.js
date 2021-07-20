@@ -1,5 +1,9 @@
 const quiz = function aboutMeQuiz() {
   let name = prompt("Welcome to the quiz about me! First, what is your name?");
+  while(name == null || name === '') {
+    name = prompt("Invalid input. Please enter your name correctly.");
+  }
+  console.log(name);
 
   alert("Please answer the following questions with a simple 'yes' or 'no'. Entering 'y' or 'n' suffices as well.");
 
