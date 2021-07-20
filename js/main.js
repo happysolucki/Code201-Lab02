@@ -27,5 +27,6 @@ const quiz = function aboutMeQuiz() {
 
 }
 
+// call quiz function when button is clicked
 let button = document.querySelector('button');
 button.addEventListener('click', quiz);
