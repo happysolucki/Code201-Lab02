@@ -1,3 +1,5 @@
+// quiz function
+
 const quiz = function aboutMeQuiz() {
   let name = prompt("Welcome to the quiz about me! First, what is your name?");
 
